@@ -38,7 +38,12 @@
 
      <!-- Character count JS -->
      <script type="text/javascript" src=/scripts/composer-char-counter.js></script>
+
+       <!-- CDN moment.js to help with displaying the time -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js" ></script>
    
+     <!-- Prevents the 'zooming out' of the webpage as the dimensions get smaller -->
+     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
   </head>
 
@@ -49,10 +54,12 @@
       <div> 
         <span class="logo">tweeter</span> 
       </div>
-      <div class = "write-new">
-      <h2>Write a new tweet</h2>
-      <i class="fa-solid fa-angles-down" style= "color: black"></i>
-    </div>
+      <footer>     
+          <button class='write-new'>
+          <span><b>Write</b> a new tweet</span>
+          <i class="fas fa-angle-double-down"></i>
+        </button>
+      </footer>
     </nav>
     
     <header class="head">
