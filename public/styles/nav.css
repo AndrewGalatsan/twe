@@ -16,3 +16,57 @@
   font-size: larger;
   margin: 1.5em;
 }
+
+.navigator footer .write-new {
+  outline: none;
+  border: none;
+  background-color: #666973;
+  color: #ffffff;
+  font-family: 'Sans-serif';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em;
+  font-size: 75%;
+  font-weight: 10%;
+}
+
+/* Animation Code */
+@keyframes bouncing-arrow {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(+10px); }
+  100% { transform: translateY(0); }
+}
+
+.navigator footer .fas {
+  color: #fa8072;
+  font-size: larger;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.navigator footer .fa-angle-double-down {
+  animation-name: bouncing-arrow;
+  animation-timing-function: ease;
+}
+
+@media only screen and (min-width:1024px) {
+  .navigator {
+    background-color: #666973;
+    background-image: none;
+    height: 120px;
+    width: 100%;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigator footer .write-new {
+    background-color: #666973;
+    background-image: none;
+  }
+}
