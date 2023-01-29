@@ -21,11 +21,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
+### Screenshot of main page of tweeter home page
 !["Screenshot of main page of tweeter home page"](https://github.com/AndrewGalatsan/twe/blob/master/docs/home-page.png?raw=true)
 
 
+### Screenshot of tweeting text example
 !["Screenshot of tweeting text example"](https://github.com/AndrewGalatsan/twe/blob/master/docs/tweeting.png?raw=true)
 
 
-
+### Screenshot of error due to >140 characters tweet
 !["Screenshot of error due to >140 characters tweet"](https://github.com/AndrewGalatsan/twe/blob/master/docs/error.png?raw=true)
