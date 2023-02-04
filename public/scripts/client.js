@@ -43,6 +43,11 @@ const renderTweets = arrayOfTweetObj => {
   }
 }
 
+const renderLastTweet = arrayOfTweetObj => {
+  const lastTweet = arrayOfTweetObj[arrayOfTweetObj.length - 1];
+  $('.tweet-container').prepend(createTweetElement(lastTweet));
+};
+
 const ajaxPost = (url, data, callback) => {
   $.post(url, data, callback);
 }
@@ -83,8 +88,13 @@ $(document).ready(function() {
   })
   $.get('/tweets', renderTweets);
 
-  //When the button is clicked, ie when the form is submitted
-  $('button').click(function(event) {
+  $('.write').click(function(event) {
+    $('.new-tweet').slideToggle('slow');
+    $('textarea').focus();
+  });
+
+   // button clicked = form submitted
+   $('.submit-and-display button').click(function(event) {
     event.preventDefault();
     const data = $('form').serialize()
     const dataLength = getText(data).length;
@@ -109,3 +119,9 @@ $(document).ready(function() {
     }
   });
 });
+
+const escape = function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
