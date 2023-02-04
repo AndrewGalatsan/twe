@@ -1,5 +1,5 @@
 .error-message {
-  display: none;
+  /* display: none; */
   background-color: #f4f1ec;
   color: red;
   font: "Source Sans Pro";
