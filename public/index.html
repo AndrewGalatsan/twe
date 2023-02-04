@@ -45,6 +45,12 @@
      <!-- Prevents the 'zooming out' of the webpage as the dimensions get smaller -->
      <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
+     <!--Error Message-->
+    <link rel="stylesheet" href="/styles/error-message.css" type="text/css"/>
+
+     <!-- Helper functions JS -->
+     <script type="text/javascript" src="/scripts/helpers.js"></script>
+
   </head>
 
   <body>
@@ -75,8 +81,9 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-
-    <section class="new-tweet">
+      <section class="new-tweet">
+        <div class="error-message">
+        </div>
 
       <form>
         <form action="/tweets" method="POST">
