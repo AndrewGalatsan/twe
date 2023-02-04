@@ -55,13 +55,13 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav class="navigator">
+    <nav class="nav-Bar">
 
       <div> 
         <span class="logo">tweeter</span> 
       </div>
       <footer>     
-          <button class='write-new'>
+          <button class='write'>
           <span><b>Write</b> a new tweet</span>
           <i class="fas fa-angle-double-down"></i>
         </button>
@@ -81,20 +81,18 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
-        <div class="error-message">
-        </div>
 
-      <form>
-        <form action="/tweets" method="POST">
+    <section class="new-tweet">
+
+      <form action="/tweets" method="POST">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
-
-        <div class="submit-and-display"></div>>
+        <p class = "error-message"> </p>
+        <div class="submit-and-display">
           <button type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
-      </form>
+        </form>
     </section>
 
     <section class="tweet-container">
