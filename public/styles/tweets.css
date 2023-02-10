@@ -28,6 +28,10 @@ article:hover .tweet-head div:nth-child(2) {
   font-weight: 600;
 }
 
+.fas:hover {
+color: #b3b313;
+}
+
 article div {
   margin: 0.5em;
   font-size: 20px;
